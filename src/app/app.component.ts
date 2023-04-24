@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Resume } from './models/resume';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'resume-app';
+  resume = new Resume("", "Tapas Pati", "", "", "", []);
+  showFiller = false;
+
+
 }
